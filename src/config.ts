@@ -443,32 +443,32 @@ export const prebuiltAppConfig: AppConfig = {
     },
     // DeepSeek-R1-Distill-Qwen
     // TODO(Charlie): Qwen2-1.5B is experiencing correctness issue, hence commented for now.
-    // {
-    //   model: "https://huggingface.co/mlc-ai/DeepSeek-R1-Distill-Qwen-1.5B-q4f16_1-MLC",
-    //   model_id: "DeepSeek-R1-Distill-Qwen-1.5B-q4f16_1-MLC",
-    //   model_lib:
-    //     modelLibURLPrefix +
-    //     modelVersion +
-    //     "/Qwen2-1.5B-Instruct-q4f16_1-ctx4k_cs1k-webgpu.wasm",
-    //   low_resource_required: true,
-    //   vram_required_MB: 1629.75,
-    //   overrides: {
-    //     context_window_size: 4096,
-    //   },
-    // },
-    // {
-    //   model: "https://huggingface.co/mlc-ai/DeepSeek-R1-Distill-Qwen-1.5B-q4f32_1-MLC",
-    //   model_id: "DeepSeek-R1-Distill-Qwen-1.5B-q4f32_1-MLC",
-    //   model_lib:
-    //     modelLibURLPrefix +
-    //     modelVersion +
-    //     "/Qwen2-1.5B-Instruct-q4f32_1-ctx4k_cs1k-webgpu.wasm",
-    //   low_resource_required: true,
-    //   vram_required_MB: 1888.97,
-    //   overrides: {
-    //     context_window_size: 4096,
-    //   },
-    // },
+    {
+      model: "https://huggingface.co/mlc-ai/DeepSeek-R1-Distill-Qwen-1.5B-q4f16_1-MLC",
+      model_id: "DeepSeek-R1-Distill-Qwen-1.5B-q4f16_1-MLC",
+      model_lib:
+        modelLibURLPrefix +
+        modelVersion +
+        "/Qwen2-1.5B-Instruct-q4f16_1-ctx4k_cs1k-webgpu.wasm",
+      low_resource_required: true,
+      vram_required_MB: 1629.75,
+      overrides: {
+        context_window_size: 4096,
+      },
+    },
+    {
+      model: "https://huggingface.co/mlc-ai/DeepSeek-R1-Distill-Qwen-1.5B-q4f32_1-MLC",
+      model_id: "DeepSeek-R1-Distill-Qwen-1.5B-q4f32_1-MLC",
+      model_lib:
+        modelLibURLPrefix +
+        modelVersion +
+        "/Qwen2-1.5B-Instruct-q4f32_1-ctx4k_cs1k-webgpu.wasm",
+      low_resource_required: true,
+      vram_required_MB: 1888.97,
+      overrides: {
+        context_window_size: 4096,
+      },
+    },
     {
       model:
         "https://huggingface.co/mlc-ai/DeepSeek-R1-Distill-Qwen-7B-q4f16_1-MLC",
